@@ -9,7 +9,7 @@ const DriverCard = (props) => {
         <h3>{props.name}</h3>
         <div>
           <big>{'★'.repeat(Math.floor(props.rating))}</big>
-          <big>{'☆'.repeat(5 - Math.floor(props.rating))}</big>
+          <big>{'☆ '.repeat(5 - Math.floor(props.rating))}</big>
         </div>
         <span>
           {props.car.model} {props.car.licensePlate}
