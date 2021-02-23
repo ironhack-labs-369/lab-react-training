@@ -3,13 +3,8 @@ import React from 'react';
 const Rating = (props) => {
   return (
     <div>
-      <span>
-        <big>☆</big>
-      </span>
-      <span>
-        <big>★</big>
-      </span>
-      {Math.floor(props.children)}
+      <big>{'★'.repeat(Math.floor(props.children))}</big>
+      <big>{'☆'.repeat(5 - Math.floor(props.children))}</big>
     </div>
   );
 };
