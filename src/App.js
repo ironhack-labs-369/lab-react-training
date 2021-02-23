@@ -8,6 +8,7 @@ import BoxColor from './Components/BoxColor/BoxColor';
 import CreditCard from './Components/CreditCard/CreditCard';
 import Rating from './Components/Rating/Rating';
 import DriverCard from './Components/DriverCard/DriverCard';
+import LikeButton from './Components/LikeButton/LikeButton';
 
 function App() {
   const user1 = {
@@ -91,6 +92,7 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton />
     </div>
   );
 }
