@@ -11,6 +11,8 @@ import DriverCard from './Components/DriverCard/DriverCard';
 import LikeButton from './Components/LikeButton/LikeButton';
 import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
 import Dice from './Components/Dice/Dice';
+import Carousel from './Components/Carousel/Carousel';
+import NumbersTable from './Components/NumbersTable/NumbersTable';
 
 function App() {
   const user1 = {
@@ -100,14 +102,23 @@ function App() {
         imgClicked="/img/persons/maxence-glasses.png"
       />
       <Dice
-        empty="../public/img/dice-empty.png"
-        one="../public/img/dice1.png"
-        two="../public/img/dice2.png"
-        three="../public/img/dice3.png"
-        four="../public/img/dice4.png"
-        five="../public/img/dice5.png"
-        six="../public/img/dice6.png"
+        empty="../img/dice-empty.png"
+        one="../img/dice1.png"
+        two="../img/dice2.png"
+        three="../img/dice3.png"
+        four="../img/dice4.png"
+        five="../img/dice5.png"
+        six="../img/dice6.png"
       />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      <NumbersTable limit={12} />
     </div>
   );
 }
