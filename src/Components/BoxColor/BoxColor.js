@@ -4,7 +4,7 @@ const BoxColor = (props) => {
   return (
     <div
       style={{
-        backgroundColor: `rgb${(props.r, props.g, props.b)}`,
+        backgroundColor: `rgb(${props.r}, ${props.g}, ${props.b})`,
         width: '100vw',
         height: '200px',
         border: '1px solid #000',

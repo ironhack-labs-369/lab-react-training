@@ -7,7 +7,7 @@ const CreditCard = (props) => {
       className={styles.CreditCard}
       style={{
         backgroundColor: props.bgColor,
-        color: props.bgColor === '#eeeeee' ? '#000' : '#fff',
+        color: props.bgColor === '#eeeeee' ? '#000' : '#eeeeee',
       }}
     >
       <h1>{props.type}</h1>
