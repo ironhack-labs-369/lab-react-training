@@ -9,6 +9,8 @@ import CreditCard from './Components/CreditCard/CreditCard';
 import Rating from './Components/Rating/Rating';
 import DriverCard from './Components/DriverCard/DriverCard';
 import LikeButton from './Components/LikeButton/LikeButton';
+import ClickablePicture from './Components/ClickablePicture/ClickablePicture';
+import Dice from './Components/Dice/Dice';
 
 function App() {
   const user1 = {
@@ -93,6 +95,19 @@ function App() {
         }}
       />
       <LikeButton />
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <Dice
+        empty="../public/img/dice-empty.png"
+        one="../public/img/dice1.png"
+        two="../public/img/dice2.png"
+        three="../public/img/dice3.png"
+        four="../public/img/dice4.png"
+        five="../public/img/dice5.png"
+        six="../public/img/dice6.png"
+      />
     </div>
   );
 }
