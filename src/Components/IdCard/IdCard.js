@@ -3,7 +3,7 @@ import styles from './IdCard.module.css';
 
 const IdCard = (props) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.Card}>
       <img src={props.data.picture} alt="user-pic" />
       <div>
         <h3>First name: {props.data.firstName}</h3>
